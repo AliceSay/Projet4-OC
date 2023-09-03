@@ -16,22 +16,24 @@
 
 <body>
    <header>
-      <div class="accueil-logo">
-         <img src="assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+      <div class="logo">
+         <img class="logo__img" src="assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
       </div>
       <div class="location">
          <form action="#" method="post">
-            <i class="fa-solid fa-location-dot"></i>
-            <input class="local-research" type="text" value="Paris,Belleville">
+            <i class="location__icone fa-solid fa-location-dot"></i>
+            <input class="location__local-research" type="text" value="Paris,Belleville">
          </form>
       </div>
    </header>
    <main>
 
       <div class="hero">
-         <h1>Réservez le menu qui vous convient</h1>
-         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-         <button>Explorez nos restaurants</button>
+         <h1 class="hero__title">Réservez le menu qui vous convient</h1>
+         <p class="hero__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+         <a href="#restaurants">
+            <button class="hero__button">Explorez nos restaurants</button>
+         </a>
       </div>
 
       <div class="fonctionnement">
@@ -56,7 +58,7 @@
          </div>
       </div>
 
-      <div class="restaurants">
+      <div id="restaurants">
          <h1>Restaurants</h1>
          <div class="restaurants-cards">
             <div class="card-badge">
