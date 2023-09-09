@@ -1,0 +1,80 @@
+@import 'colors';
+
+//*******PAGES MENU********//
+
+.logo__icone {
+  font-size: 25px;
+  padding-left: 28px;
+  margin-top: 20px;
+  color: $darkgrey;
+}
+.menu-page__img {
+  width: 100%;
+  height: 280px;
+}
+.menu-page__container {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightgrey;
+  .menu-page__container-title {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+  }
+  .menu-page__restaurant-title {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    padding-left: 15px;
+  }
+  .menu-page__icone {
+    padding-top: 20px;
+    font-size: 25px;
+    color: $darkgrey;
+    transition: 400ms;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  .section-menu__title {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 15px;
+    color: $darkgrey;
+  }
+}
+.menu-card {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: $shadow-box-initial;
+  margin: 10px;
+  .menu-card__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .menu-card__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .menu-card__description {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .menu-card__price {
+    position: absolute;
+    right: 25px;
+    padding-top: 38px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+}

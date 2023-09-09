@@ -1,0 +1,63 @@
+@import 'colors';
+
+.restaurant-card__card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .restaurant-card__img {
+    width: 90%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .restaurant-card__img-la-note {
+    width: 90%;
+    height: 240px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .restaurant-card__badge {
+    color: $green;
+    background-color: $lightgreen;
+    position: absolute;
+    right: 35px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 29px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .restaurant-card__card-content {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .restaurant-card__card-title {
+    color: $black;
+    margin-bottom: 5px;
+    margin-left: 12px;
+  }
+  .restaurant-card__card-subtitle {
+    color: $black;
+    margin-top: 5px;
+    margin-left: 12px;
+  }
+  .restaurant-card__card-icone {
+    color: $black;
+    transition: 400ms;
+    &:hover {
+      color: $purple;
+    }
+    font-size: 22px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+}
