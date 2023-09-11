@@ -2,23 +2,50 @@
 
 //*******PAGES MENU********//
 
-.logo__icone {
+body {
+  margin: 0;
+}
+.menu-logo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  height: 76px;
+
+  .menu-logo__img {
+    width: 40%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+  }
+}
+
+.menu-logo__icone {
   font-size: 25px;
   padding-left: 28px;
   margin-top: 20px;
   color: $darkgrey;
 }
+
 .menu-page__img {
   width: 100%;
-  height: 280px;
+  height: 350px;
 }
 .menu-page__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: $lightgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  bottom: 52px;
+
   .menu-page__container-title {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 45px;
   }
   .menu-page__restaurant-title {
@@ -41,6 +68,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
+  width: 100%;
   .section-menu__title {
     font-size: 15px;
     font-weight: lighter;
@@ -54,7 +82,6 @@
   background-color: $white;
   box-sizing: border-box;
   border-radius: 20px;
-  box-shadow: $shadow-box-initial;
   margin: 10px;
   .menu-card__text {
     display: flex;
@@ -72,7 +99,7 @@
   }
   .menu-card__price {
     position: absolute;
-    right: 25px;
+    right: 50px;
     padding-top: 38px;
     font-size: 16px;
     font-weight: bolder;

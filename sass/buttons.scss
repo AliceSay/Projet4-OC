@@ -21,16 +21,23 @@
   color: $white;
   font-size: 14px;
 }
+
 .fonction-btn {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-bottom: 65px;
+  padding-left: 20px;
+
+  .fonction-btn__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .fonction-btn__btn-text {
-    width: 300px;
+    width: 90%;
     height: 80px;
     border-radius: 28px;
-    box-shadow: $shadow-box-initial;
     font-size: 16px;
     font-weight: 700;
     border: none;
@@ -48,5 +55,17 @@
   .fonction-btn__btn-icone {
     width: 50px;
     color: $darkgrey;
+  }
+}
+@media (min-width: 1024px) {
+  .fonction-btn {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+    padding-left: 60px;
+  }
+  .fonction-btn__btn {
+    width: 30%;
   }
 }
