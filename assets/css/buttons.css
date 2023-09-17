@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-  box-shadow: 0px 5px 10px rgba(53, 53, 53, 0.5);
+  box-shadow: 0px 2px 8px rgba(53, 53, 53, 0.2);
   background: linear-gradient(#ff79da, #9356dc);
   transition: all;
   margin-left: 60px;
@@ -14,33 +14,31 @@
   border: none;
   color: white;
   font-size: 14px;
+  margin-right: 55px;
 }
 .btn-action:hover {
   filter: brightness(1.1);
-  box-shadow: 0px 5px 10px rgba(53, 53, 53, 0);
 }
 
-.fonction-btn {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 65px;
-  padding-left: 20px;
-}
-.fonction-btn .fonction-btn__btn {
+.fonction-btn__btn {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
-.fonction-btn .fonction-btn__btn-text {
+
+.fonction-btn__btn-text {
   width: 90%;
   height: 80px;
   border-radius: 28px;
   font-size: 16px;
   font-weight: 700;
   border: none;
+  box-shadow: 0px 2px 8px rgba(53, 53, 53, 0.2);
 }
-.fonction-btn .fonction-btn__btn-number {
+
+.fonction-btn__btn-number {
   width: 22px;
   height: 22px;
   border-radius: 50px;
@@ -50,20 +48,8 @@
   position: relative;
   left: 15px;
 }
-.fonction-btn .fonction-btn__btn-icone {
+
+.fonction-btn__btn-icone {
   width: 50px;
   color: #353535;
-}
-
-@media (min-width: 1024px) {
-  .fonction-btn {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 0;
-    padding-left: 60px;
-  }
-  .fonction-btn__btn {
-    width: 30%;
-  }
 }/*# sourceMappingURL=buttons.css.map */

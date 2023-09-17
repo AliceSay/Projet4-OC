@@ -1,35 +1,53 @@
 @import 'colors';
+@import 'buttons';
+@import 'keyframes';
 
-//*******PAGES MENU********//
+//*******PAGES MENU RESTAURANT********//
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.restaurant {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }
 .menu-logo {
   display: flex;
   flex-direction: row;
-  margin-bottom: 15px;
-  height: 76px;
+  height: 80px;
 
   .menu-logo__img {
-    width: 40%;
-    height: 50px;
-    display: block;
+    width: 162px;
     margin: auto;
-    padding-top: 25px;
+  }
+  .menu-logo__icone {
+    padding-top: 15px;
+    font-size: 25px;
+    padding-left: 28px;
+    margin-top: 15px;
+    color: $darkgrey;
   }
 }
-
-.menu-logo__icone {
-  font-size: 25px;
-  padding-left: 28px;
-  margin-top: 20px;
-  color: $darkgrey;
-}
-
-.menu-page__img {
+.restaurant-img {
+  display: flex;
   width: 100%;
-  height: 350px;
+}
+.menu-page__img {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  align-self: stretch;
 }
 .menu-page__container {
   width: 100%;
@@ -40,7 +58,7 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
-  bottom: 52px;
+  margin-top: -25px;
 
   .menu-page__container-title {
     display: flex;
@@ -50,11 +68,13 @@ body {
   }
   .menu-page__restaurant-title {
     font-family: 'Shrikhand', sans-serif;
+    font-size: 22px;
     font-weight: 400;
-    padding-left: 15px;
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
   .menu-page__icone {
-    padding-top: 20px;
+    padding-top: 36px;
     font-size: 25px;
     color: $darkgrey;
     transition: 400ms;
@@ -75,18 +95,33 @@ body {
     margin-left: 15px;
     color: $darkgrey;
   }
+  h2 {
+    border-bottom: $green 2px solid;
+    border-bottom-width: 3px;
+  }
 }
 .menu-card {
   display: flex;
   flex-direction: row;
-  background-color: $white;
+  justify-content: space-between;
+  background-color: white;
   box-sizing: border-box;
   border-radius: 20px;
   margin: 10px;
+  height: 70px;
+  box-shadow: $shadow-box-initial;
+  transform: translateX(20px);
+  animation: scroll-card 4s forwards;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+  animation-name: scroll-card;
+
   .menu-card__text {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    padding-top: 12px;
   }
   .menu-card__title {
     font-size: 16px;
@@ -98,10 +133,78 @@ body {
     margin-top: 8px;
   }
   .menu-card__price {
-    position: absolute;
-    right: 50px;
     padding-top: 38px;
+    padding-right: 25px;
     font-size: 16px;
     font-weight: bolder;
+  }
+}
+
+// ******FOOTER******//
+.footer {
+  background-color: $darkgrey;
+  padding-bottom: 30px;
+}
+
+.footer-logo__img {
+  filter: invert(1);
+  color: white;
+  width: 130px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+ul {
+  padding-left: 25px;
+}
+li {
+  list-style: none;
+}
+.menu-footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  .menu-footer__action {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+  }
+  .menu-footer__action-icone {
+    color: white;
+  }
+  .menu-footer__action-link {
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-menu {
+    width: 65%;
+  }
+  .menu-page__container {
+    max-width: 1050px;
+    width: 100%;
+  }
+  .menu-logo__img {
+    width: 40%;
+    margin: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer-logo__img {
+    padding-top: 35px;
+    padding-right: 60px;
+  }
+  .menu-footer {
+    padding-top: 37px;
+    padding-right: 35px;
+  }
+  .menu-footer__list {
+    flex-direction: row;
+  }
+  li {
+    padding-right: 15px;
   }
 }
