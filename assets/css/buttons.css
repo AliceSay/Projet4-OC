@@ -52,4 +52,10 @@
 .fonction-btn__btn-icone {
   width: 50px;
   color: #353535;
+}
+
+@media (min-width: 1024px) {
+  .fonction-btn__btn {
+    width: 30%;
+  }
 }/*# sourceMappingURL=buttons.css.map */

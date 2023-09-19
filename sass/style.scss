@@ -1,5 +1,4 @@
 @import 'colors';
-@import 'page-restaurant';
 @import 'buttons';
 @import 'cards';
 @import 'keyframes';
@@ -139,13 +138,19 @@ h1 {
 }
 
 //********section FONCTIONNEMENT******//
+.section-fonctionnement-title {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
 .fonctionnement {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-top: 20px;
   padding-bottom: 65px;
+  padding-right: 25px;
+  padding-left: 20px;
 }
 .fonction-btn {
   width: 100%;
@@ -161,6 +166,19 @@ h1 {
   width: 100%;
   background-color: $lightgrey;
   padding-bottom: 55px;
+}
+.section-restaurant-title {
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.restaurants-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
 }
 
 // ******FOOTER******//
@@ -209,25 +227,34 @@ li {
 }
 
 @media (min-width: 1024px) {
+  .section-fonctionnement-title {
+    padding-left: 100px;
+    padding-top: 20px;
+  }
   .fonction-btn {
     display: flex;
     flex-direction: row;
-    max-width: 1050px;
     width: 100%;
     gap: 0;
+    padding-left: 15px;
+    padding-right: 70px;
+  }
+  .section-restaurant-title {
+    padding-left: 130px;
   }
   .restaurants-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1050px;
+    gap: 35px 80px;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 40px;
   }
 
   article {
-    width: 48%;
+    width: 40%;
   }
 
   .footer {
@@ -235,7 +262,7 @@ li {
     flex-direction: row-reverse;
   }
   .footer-logo__img {
-    padding-top: 35px;
+    padding-top: 48px;
     padding-right: 60px;
   }
   .menu-footer {

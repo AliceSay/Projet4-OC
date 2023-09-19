@@ -1,82 +1,74 @@
 @import 'colors';
 
-.restaurants-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .restaurant-card__card {
+  position: relative;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  box-shadow: $shadow-box-initial;
-
-  .restaurant-card__img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  .restaurant-card__img-la-note {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  .restaurant-card__badge {
-    color: $green;
-    background-color: $lightgreen;
-    position: absolute;
-    right: 30px;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 29px;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .restaurant-card__card-content {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  .restaurant-card__card-title {
-    color: black;
-    margin-bottom: 5px;
-    margin-left: 12px;
-    margin-top: 7px;
-  }
-  .restaurant-card__card-subtitle {
-    color: black;
-    margin-top: 5px;
-    margin-left: 12px;
-  }
-  .restaurant-card__card-icone {
-    color: black;
-    transition: 400ms;
-    &:hover {
-      color: $purple;
-    }
-    font-size: 22px;
-    margin-right: 20px;
-    margin-top: 30px;
-  }
+  width: 100%;
 }
+.restaurant-card__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant-card__img-la-note {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant-card__badge {
+  color: $green;
+  background-color: $lightgreen;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 29px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.restaurant-card__card-content {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.restaurant-card__card-title {
+  color: black;
+  margin-bottom: 5px;
+  margin-left: 12px;
+  margin-top: 7px;
+}
+.restaurant-card__card-subtitle {
+  color: black;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+.restaurant-card__card-icone {
+  color: black;
+  transition: 400ms;
+  &:hover {
+    color: $purple;
+  }
+  font-size: 22px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
 @media (min-width: 1024px) {
   .restaurant-card__card {
-    width: 48%;
+    width: 40%;
   }
 }

@@ -1,19 +1,12 @@
-.restaurants-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .restaurant-card__card {
+  position: relative;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  box-shadow: 0px 2px 8px rgba(53, 53, 53, 0.2);
+  width: 100%;
 }
-.restaurant-card__card .restaurant-card__img {
+
+.restaurant-card__img {
   width: 100%;
   height: 240px;
   -o-object-fit: cover;
@@ -21,7 +14,8 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurant-card__card .restaurant-card__img-la-note {
+
+.restaurant-card__img-la-note {
   width: 100%;
   height: 240px;
   -o-object-fit: cover;
@@ -29,12 +23,13 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurant-card__card .restaurant-card__badge {
+
+.restaurant-card__badge {
   color: #008766;
   background-color: #99e2d0;
   position: absolute;
-  right: 30px;
-  margin-top: 15px;
+  right: 35px;
+  top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +38,8 @@
   font-size: 14px;
   font-weight: 600;
 }
-.restaurant-card__card .restaurant-card__card-content {
+
+.restaurant-card__card-content {
   width: 100%;
   height: 70px;
   display: flex;
@@ -53,30 +49,33 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.restaurant-card__card .restaurant-card__card-title {
+
+.restaurant-card__card-title {
   color: black;
   margin-bottom: 5px;
   margin-left: 12px;
   margin-top: 7px;
 }
-.restaurant-card__card .restaurant-card__card-subtitle {
+
+.restaurant-card__card-subtitle {
   color: black;
   margin-top: 5px;
   margin-left: 12px;
 }
-.restaurant-card__card .restaurant-card__card-icone {
+
+.restaurant-card__card-icone {
   color: black;
   transition: 400ms;
   font-size: 22px;
   margin-right: 20px;
   margin-top: 30px;
 }
-.restaurant-card__card .restaurant-card__card-icone:hover {
+.restaurant-card__card-icone:hover {
   color: #9356dc;
 }
 
 @media (min-width: 1024px) {
   .restaurant-card__card {
-    width: 48%;
+    width: 40%;
   }
 }/*# sourceMappingURL=cards.css.map */
