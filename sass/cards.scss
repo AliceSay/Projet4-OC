@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'keyframes';
 
 .restaurant-card__card {
   position: relative;
@@ -56,15 +57,26 @@
   margin-top: 5px;
   margin-left: 12px;
 }
-.restaurant-card__card-icone {
-  color: black;
-  transition: 400ms;
-  &:hover {
-    color: $purple;
-  }
+.empty-heart {
+  position: absolute;
+  right: 20px;
   font-size: 22px;
-  margin-right: 20px;
   margin-top: 30px;
+}
+.full-heart {
+  position: absolute;
+  right: 20px;
+  font-size: 22px;
+  margin-top: 30px;
+  opacity: 0;
+  transition: all 1s;
+  &:hover {
+    opacity: 1;
+    background-image: $linearGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 @media (min-width: 1024px) {

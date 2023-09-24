@@ -73,13 +73,23 @@ a {
     padding-top: 35px;
     padding-bottom: 40px;
   }
-  .menu-page__icone {
-    padding-top: 36px;
-    font-size: 25px;
-    color: $darkgrey;
-    transition: 400ms;
+  .empty-heart {
+    position: relative;
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  .full-heart {
+    position: relative;
+    font-size: 22px;
+    margin-top: 40px;
+    opacity: 0;
+    transition: all 1s;
     &:hover {
-      color: $purple;
+      opacity: 1;
+      background-image: $linearGradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
 }
@@ -117,44 +127,56 @@ a {
   animation-timing-function: ease-out;
   animation-play-state: running;
   animation-name: scroll-card;
-
-  .menu-card__text {
-    display: flex;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-top: 12px;
-  }
-  .menu-card__title {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0px;
-  }
-  .menu-card__description {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-  .menu-card__price {
-    padding-top: 38px;
-    padding-right: 25px;
-    font-size: 16px;
-    font-weight: bolder;
-  }
-  .menu-card__slide {
-    display: flex;
-    flex-direction: row;
-    transition: all 2s ease-in-out;
-    &:hover + .menu-card__check {
-      animation: slide 2s forwards;
-      width: 65px;
-    }
-  }
-  .menu-card__check {
-    width: 0;
-    background-color: $lightgreen;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
 }
+.menu-card:hover .menu-card__check {
+  transition: all 0.7s ease-in-out;
+  animation: slide 0.7s forwards;
+  width: 65px;
+}
+
+.menu-card__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-card__description {
+  font-size: 14px;
+  margin-top: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-card__price {
+  padding-top: 38px;
+  padding-right: 25px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.menu-card__slide {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+}
+.menu-card__check {
+  width: 0;
+  background-color: $lightgreen;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
 .checkmark {
   color: white;
   font-size: 20px;
