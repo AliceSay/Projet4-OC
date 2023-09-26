@@ -53,6 +53,23 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(1);
+    transform: translateX(1em);
+  }
+}
+@keyframes shadow-box {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 8px rgba(53, 53, 53, 0.5);
+  }
+}
+@keyframes heart {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.01);
   }
 }/*# sourceMappingURL=keyframes.css.map */

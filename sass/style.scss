@@ -71,8 +71,7 @@ a {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
-
-  .logo__img {
+  &__img {
     width: 162px;
     display: block;
     margin: auto;
@@ -87,21 +86,22 @@ a {
   justify-content: center;
   flex-direction: row;
   background-color: $grey;
-  .location__icone {
-    height: 55px;
-    width: 40px;
-    padding-left: 100px;
-    padding-bottom: 5px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .location__local-research {
-    background-color: $grey;
-    border: none;
-    outline: none;
-  }
+}
+.location__icone {
+  height: 55px;
+  width: 40px;
+  padding-left: 100px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location__local-research {
+  background-color: $grey;
+  border: none;
+  outline: none;
 }
 
 form {
@@ -123,13 +123,13 @@ h1 {
   align-items: center;
   padding-top: 15px;
   background-color: $lightgrey;
-  .hero__title {
+  &__title {
     text-align: center;
     width: 75%;
     margin-left: 35px;
     margin-bottom: 10px;
   }
-  .hero__text {
+  &__text {
     font-size: 18px;
     font-weight: 300;
     text-align: center;

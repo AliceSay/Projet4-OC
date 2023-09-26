@@ -26,11 +26,11 @@ a {
   flex-direction: row;
   height: 80px;
 
-  .menu-logo__img {
+  &__img {
     width: 162px;
     margin: auto;
   }
-  .menu-logo__icone {
+  &__icone {
     padding-top: 15px;
     font-size: 25px;
     padding-left: 28px;
@@ -77,15 +77,20 @@ a {
     position: relative;
     font-size: 22px;
     margin-top: 40px;
+    &:hover {
+      opacity: 0;
+    }
   }
   .full-heart {
-    position: relative;
+    position: absolute;
     font-size: 22px;
     margin-top: 40px;
+    padding-inline-start: 249px;
     opacity: 0;
     transition: all 1s;
     &:hover {
       opacity: 1;
+      animation: heart 0.7s forwards;
       background-image: $linearGradient;
       background-clip: text;
       -webkit-background-clip: text;
@@ -158,6 +163,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .menu-card__price {
   padding-top: 38px;
   padding-right: 25px;
@@ -229,10 +235,7 @@ li {
     max-width: 1050px;
     width: 100%;
   }
-  .menu-logo__img {
-    width: 40%;
-    margin: auto;
-  }
+
   .footer {
     display: flex;
     flex-direction: row-reverse;

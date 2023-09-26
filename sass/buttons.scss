@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'keyframes';
 
 .btn-action {
   display: flex;
@@ -18,16 +19,7 @@
   margin-right: 55px;
   &:hover {
     filter: brightness(1.1);
-  }
-}
-.btn-action::after {
-  content: '';
-  display: block;
-  box-shadow: $shadow-box-darken;
-  opacity: 0;
-  transition: all 0.3s ease-out;
-  &:hover::after {
-    opacity: 1;
+    animation: shadow-box 0.7s ease-in forwards;
   }
 }
 
