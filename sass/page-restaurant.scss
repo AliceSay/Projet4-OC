@@ -74,23 +74,18 @@ a {
     padding-bottom: 40px;
   }
   .empty-heart {
-    position: relative;
+    position: absolute;
     font-size: 22px;
     margin-top: 40px;
-    &:hover {
-      opacity: 0;
-    }
   }
   .full-heart {
     position: absolute;
     font-size: 22px;
     margin-top: 40px;
-    padding-inline-start: 249px;
     opacity: 0;
     transition: all 1s;
     &:hover {
       opacity: 1;
-      animation: heart 0.7s forwards;
       background-image: $linearGradient;
       background-clip: text;
       -webkit-background-clip: text;
@@ -134,9 +129,9 @@ a {
   animation-name: scroll-card;
 }
 .menu-card:hover .menu-card__check {
-  transition: all 0.7s ease-in-out;
-  animation: slide 0.7s forwards;
-  width: 65px;
+  transform-origin: right;
+  transition: transform 0.7s ease-in-out forwards;
+  width: 60px;
 }
 
 .menu-card__text {
@@ -186,7 +181,7 @@ a {
 .checkmark {
   color: white;
   font-size: 20px;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-top: 24px;
 }
 

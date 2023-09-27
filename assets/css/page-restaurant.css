@@ -53,7 +53,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(1em);
+    transform: translateX(0);
   }
 }
 @keyframes shadow-box {
@@ -189,7 +189,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(1em);
+    transform: translateX(0);
   }
 }
 @keyframes shadow-box {
@@ -284,18 +284,14 @@ a {
   padding-bottom: 40px;
 }
 .menu-page__container .empty-heart {
-  position: relative;
+  position: absolute;
   font-size: 22px;
   margin-top: 40px;
-}
-.menu-page__container .empty-heart:hover {
-  opacity: 0;
 }
 .menu-page__container .full-heart {
   position: absolute;
   font-size: 22px;
   margin-top: 40px;
-  padding-inline-start: 249px;
   opacity: 0;
   transition: all 1s;
 }
@@ -347,7 +343,7 @@ a {
 .menu-card:hover .menu-card__check {
   transition: all 0.7s ease-in-out;
   animation: slide 0.7s forwards;
-  width: 65px;
+  width: 60px;
 }
 
 .menu-card__text {
@@ -401,7 +397,7 @@ a {
 .checkmark {
   color: white;
   font-size: 20px;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-top: 24px;
 }
 

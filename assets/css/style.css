@@ -53,7 +53,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(1em);
+    transform: translateX(0);
   }
 }
 @keyframes shadow-box {
@@ -189,7 +189,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(1em);
+    transform: translateX(0);
   }
 }
 @keyframes shadow-box {
@@ -357,7 +357,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(1em);
+    transform: translateX(0);
   }
 }
 @keyframes shadow-box {
@@ -383,6 +383,8 @@
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -605,8 +607,11 @@ li {
 }
 
 @media (min-width: 1024px) {
+  .fonctionnement {
+    padding-left: 0%;
+  }
   .section-fonctionnement-title {
-    padding-left: 100px;
+    padding-left: 110px;
     padding-top: 20px;
   }
   .fonction-btn {
@@ -618,7 +623,7 @@ li {
     padding-right: 70px;
   }
   .section-restaurant-title {
-    padding-left: 130px;
+    padding-left: 110px;
   }
   .restaurants-card {
     display: flex;
@@ -627,8 +632,7 @@ li {
     flex-wrap: wrap;
     gap: 35px 80px;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-left: 0px;
   }
   article {
     width: 40%;
