@@ -1,0 +1,128 @@
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+    width: 100vw;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scroll-card {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform-origin: right;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(1);
+  }
+}
+@keyframes shadow-box {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 8px rgba(53, 53, 53, 0.5);
+  }
+}
+.btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 0px 2px 8px rgba(53, 53, 53, 0.2);
+  background: linear-gradient(#ff79da, #9356dc);
+  margin-left: 60px;
+  margin-bottom: 58px;
+  width: 200px;
+  height: 50px;
+  padding: 0px 15px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-right: 55px;
+}
+.btn-action:hover {
+  filter: brightness(1.1);
+  animation: shadow-box 0.7s ease-in forwards;
+}
+
+.fonction-btn__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.fonction-btn__btn-text {
+  width: 90%;
+  height: 80px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(53, 53, 53, 0.2);
+}
+.fonction-btn__btn-number {
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  border: none;
+  background-color: #9356dc;
+  color: white;
+  position: relative;
+  left: 15px;
+}
+.fonction-btn__btn-icone {
+  width: 50px;
+  color: #353535;
+}
+.fonction-btn__btn-icone:hover {
+  color: #9356dc;
+}
+
+@media (min-width: 1024px) {
+  .fonction-btn__btn {
+    width: 30%;
+  }
+} /*# sourceMappingURL=buttons.css.map */

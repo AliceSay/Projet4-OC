@@ -1,0 +1,65 @@
+@import 'colors';
+@import 'keyframes';
+
+.btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: $shadow-box-initial;
+  background: $linearGradient;
+  margin-left: 60px;
+  margin-bottom: 58px;
+  width: 200px;
+  height: 50px;
+  padding: 0px 15px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-right: 55px;
+  &:hover {
+    filter: brightness(1.1);
+    animation: shadow-box 0.7s ease-in forwards;
+  }
+}
+
+.fonction-btn {
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  &__btn-text {
+    width: 90%;
+    height: 80px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    box-shadow: $shadow-box-initial;
+  }
+  &__btn-number {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    border: none;
+    background-color: $purple;
+    color: white;
+    position: relative;
+    left: 15px;
+  }
+  &__btn-icone {
+    width: 50px;
+    color: $darkgrey;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .fonction-btn__btn {
+    width: 30%;
+  }
+}
